@@ -12,13 +12,6 @@ const userController = require('./../controllers/userController');
 // ------------------------------------------
 // *******  ROUTE HANDLERS/CONTROLLERS *******
 
-// const updateUser = (req, res) => {
-//   res.status(500).json({
-//     status: 'error',
-//     message: 'This route is not yet defined',
-//   });
-// };
-
 // -------------------------------------------------
 
 // const userRouter = express.Router();
