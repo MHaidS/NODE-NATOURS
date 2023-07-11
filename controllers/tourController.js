@@ -19,12 +19,7 @@ exports.checkID = (req, res, next, val) => {
 
 // 65. CHAINING MULTIPLE MIDDLEWARE FUNCTIONS
 // ******************
-// 65.1. Exercise
-// Create a checkBody middleware
-// Check if body contains the name & price property
-// If not, send back 400 (bad request)
-// Add it to the post handler stack
-// ******************
+
 exports.checkBody = (req, res, next) => {
   if (!req.body.name || !req.body.price) {
     return res.status(404).json({
@@ -84,12 +79,7 @@ exports.createTour = (req, res) => {
 
 exports.updateTour = (req, res) => {
   // 64.8. remove repeated code
-  // if (req.params.id * 1 > tours.length) {
-  //   return res.status(404).json({
-  //     status: 'fail',
-  //     message: 'Invalid ID',
-  //   });
-  // }
+
   res.status(200).json({
     status: 'success',
     data: {
@@ -99,8 +89,6 @@ exports.updateTour = (req, res) => {
 };
 
 exports.deleteTour = (req, res) => {
-  // 64.5. so let's go ahead & get this code fr here & create a new middleware function called 'checkId' & of course, we also need to export it
-
   res.status(204).json({
     status: 'success',
     data: null,

@@ -14,12 +14,10 @@ const userController = require('./../controllers/userController');
 
 // -------------------------------------------------
 
-// const userRouter = express.Router();
 const router = express.Router();
 
 // userRouter.route('/').get(getAllUsers).post(createUsers);
 
-// router.route('/').get(getAllUsers).post(createUsers);
 router
   .route('/')
   .get(userController.getAllUsers)
