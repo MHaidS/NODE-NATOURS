@@ -12,8 +12,6 @@ const userController = require('./../controllers/userController');
 // ------------------------------------------
 // *******  ROUTE HANDLERS/CONTROLLERS *******
 
-// -------------------------------------------------
-
 const router = express.Router();
 
 // userRouter.route('/').get(getAllUsers).post(createUsers);

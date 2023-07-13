@@ -12,8 +12,6 @@ router.param('id', tourController.checkID);
 
 // console.log(`Tour id is: ${val}`);
 
-// b) then 'app.use(express.json())',
-
 // 65. CHAINING MULTIPLE MIDDLEWARE FUNCTIONS
 // ******************
 
@@ -24,7 +22,7 @@ router.param('id', tourController.checkID);
 router
   .route('/')
   .get(tourController.getAllTours)
-  // .post(tourController.createTour);
+
   .post(tourController.checkBody, tourController.createTour);
 
 router
